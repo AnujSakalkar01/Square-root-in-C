@@ -1,2 +1,19 @@
 # Square-root-in-C
-program for finding square root of any number in  C
+#include <math.h>
+
+int main() {
+    double num, result;
+
+    printf("Enter a number: ");
+    scanf("%lf", &num);
+
+    if (num < 0) {
+        printf("Error: Negative numbers do not have real square roots.\n");
+    } else {
+        result = sqrt(num);
+        printf("Square root of %.2lf is %.2lf\n", num, result);
+    }
+
+    return 0;
+}
+
